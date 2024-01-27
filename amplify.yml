@@ -1,21 +1,8 @@
 version: 1.0 
 applications:
-    - appRoot: /
     # env:
     #   variables:
     #     key: value
-    - backend:
-      # phases:
-      #   preBuild:
-      #     commands:
-      #       - *enter command*
-        build:
-          commands:
-            - npm i -g @aws-amplify/cli
-            - amplifyPush --simple
-        # postBuild:
-        #     commands:
-        #     - *enter command*
     - frontend:
       buildPath: / # Run install and build from the monorepo project root
       phases:
@@ -33,6 +20,19 @@ applications:
       cache:
         paths:
             - node_modules/**/*
+      appRoot: frontend
+    - backend:
+      # phases:
+      #   preBuild:
+      #     commands:
+      #       - *enter command*
+        build:
+          commands:
+            - npm i -g @aws-amplify/cli
+            - amplifyPush --simple
+        # postBuild:
+        #     commands:
+        #     - *enter command*
 
   # - frontend:
   #     phases:
