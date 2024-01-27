@@ -9,9 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		amplify.yml = amplify.yml
 		index.html = index.html
 		LICENSE.txt = LICENSE.txt
-		website\src\ui-assets\react.svg = website\src\ui-assets\react.svg
 		README.md = README.md
-		website\src\ui-assets\vite.svg = website\src\ui-assets\vite.svg
 	EndProjectSection
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "website", "website\website.esproj", "{06EE3C01-618E-42C6-897C-B8F0A6D1D8FC}"
