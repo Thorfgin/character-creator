@@ -1,6 +1,6 @@
 version: 1.0 
 applications:
-  - appRoot: /
+  - appRoot: /website/
     # env:
     #   variables:
     #     key: value
