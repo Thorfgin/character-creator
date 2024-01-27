@@ -9,6 +9,7 @@ applications:
         phases:
           preBuild:
             commands:
+              - cd website
               - npm ci
           build:
             commands:
