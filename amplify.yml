@@ -1,10 +1,10 @@
 version: 1.0 
 applications:
-    appRoot: /
+    - appRoot: /
     # env:
     #   variables:
     #     key: value
-    backend:
+    - backend:
       # phases:
       #   preBuild:
       #     commands:
@@ -16,7 +16,7 @@ applications:
         # postBuild:
         #     commands:
         #     - *enter command*
-    frontend:
+    - frontend:
       buildPath: / # Run install and build from the monorepo project root
       phases:
         preBuild:
