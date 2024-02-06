@@ -1,9 +1,10 @@
 version: 1.0 
 applications:
     - appRoot: website
-    # env:
-    #   variables:
-    #     key: value
+      env:
+        variables:
+          profile: "default"
+          envName: "amplify"
       frontend:
         buildPath: / # Run install and build from the monorepo project root
         phases:
