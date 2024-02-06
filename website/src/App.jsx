@@ -3,6 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
+// Ensure that the application has access to the AWS backend
+import { Amplify } from 'aws-amplify';
+import config from './aws-exports.js';
+Amplify.configure(config);
+
+// Collect data currently stored in the DataStore
+import { DataStore } from 'aws-amplify/datastore';
+import { Todo } from './models';
+
+const models = await DataStore.query(Todo);
+console.log(models);
+
 function App() {
   const [count, setCount] = useState(0)
 
