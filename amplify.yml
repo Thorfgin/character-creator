@@ -12,7 +12,7 @@ applications:
               - npm ci
           build:
             commands:
-              - npm run-script build
+              - npx vite build
         artifacts:
           baseDirectory: dist
           files:
