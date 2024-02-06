@@ -1,5 +1,6 @@
 {
   "AppSyncApiName": "charactercreator",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2024-02-06T08:47:46.186Z"
 }
